@@ -67,7 +67,9 @@ public class State {
     }
 
     public void setGameRunning(Boolean gameRunning) {
-        this.gameRunning.setValue(gameRunning);
+        //never notice if game is running
+        this.gameRunning.setValue(false);
+        //this.gameRunning.setValue(gameRunning);
     }
 
     public SimpleBooleanProperty saveInProgressProperty() {
